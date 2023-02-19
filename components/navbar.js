@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../public/logo-transparent.png'
 
 export default function Navbar() {
     return (
         
-        <header id="site-header" className="site-header site-header-onepage bg-dark-1">
+        <header id="site-header" className="site-header site-header-onepage">
             <div className="octf-main-header is-fixed">
                 <div className="octf-area-wrap">
                     <div className="container octf-mainbar-container">
@@ -12,7 +14,7 @@ export default function Navbar() {
                                 <div className="octf-col logo-col">
                                     <div id="site-logo" className="site-logo">
                                         <a href="index.html">
-
+                                        <Image src={Logo} alt="Logo" />
                                         </a>
                                     </div>
                                 </div>

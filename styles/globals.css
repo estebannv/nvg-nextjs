@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: Theratio
-Theme URI: http://templates.thememodern.com/theratio/index.html
-Author: ThemeModern
-Author URI: http://thememodern.com
-Description: Theratio is a WordPress theme for Interior Design & Architecture Company. Theratio is easy to use, it provides everything you need to create great looking website. With Theratio you can impress your customer by it’s professional design and the interactivity. Theratio built with latest website technology to ensure your website is looks nice on desktop and mobile. Get Theratio now!
-Version: 1.0
-License: GNU General Public License v2+
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theratio
-Domain Path: /languages/
-Tags: one-column, two-columns, left-sidebar, right-sidebar, full-width-template, post-formats, theme-options, threaded-comments, translation-ready
-
-*/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -1381,8 +1367,9 @@ a:hover, a:active {
   align-items: center;
   line-height: 1;
 }
-#site-logo img {
-  height: 90px;
+#site-logo {
+  display: block;
+  margin: auto;
 }
 #site-logo img.logo-static {
   display: block;
@@ -9176,8 +9163,15 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .vegas-timer {
     display: none;
 }
+.bg-temp{
+  background-image: url('../public/img/slide1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
 .hero-content {
     position: relative;
+    padding-top: 5rem;
 }
 .hero-content .hero-logo {
     padding-bottom: 30px;
@@ -9236,8 +9230,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     animation: MoveUpRight 1.5s linear infinite;
 }
 .site-header-onepage .site-logo {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .site-header-onepage .octf-main-header {
     border: none;
