@@ -1377,7 +1377,9 @@ a:hover, a:active {
 #site-logo img.logo-scroll {
   display: none;
 }
-
+#site-logo img {
+  width: 5rem;
+}
 .is-stuck #site-logo img.logo-static {
   display: none;
 }
@@ -1394,7 +1396,8 @@ a:hover, a:active {
 }
 
 .site-header {
-  position: absolute;
+  position: fixed;
+  transition: 0.5s;
   width: 100%;
   z-index: 999;
 }
@@ -2075,7 +2078,6 @@ a:hover, a:active {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   .header_mobile.open, .header_mobile.is-stuck {
     background: #1a1a1a;
@@ -6740,6 +6742,11 @@ div.elementor-widget-heading .elementor-heading-title {
   margin-bottom: 10px;
   color: #fff;
 }
+.mmenu-wrapper .mmenu-close i{
+  display: flex;
+  justify-content: end;
+}
+
 .mmenu-wrapper .mobile_mainmenu {
   margin: 0;
   padding: 0;
@@ -9244,7 +9251,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     padding-bottom: 15px;
 }
 .site-header-onepage .mobile_logo img {
-    height: 46px;
+    height: 5rem;
+    width: auto;
 }
 .site-header-onepage .octf-mainbar-row .octf-col.menu-col {
     flex-grow: 0.8;
@@ -9813,15 +9821,15 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .mc4wp-form-fields .subscribe-inner-form {
   position: relative;
 }
-.mc4wp-form-fields .subscribe-inner-form input[type=email] {
+.mc4wp-form-fields .subscribe-inner-form input, .mc4wp-form-fields .subscribe-inner-form textarea {
   height: 46px;
   width: 100%;
   background: transparent;
   color: #b1b0b0;
   border-color: rgba(255, 255, 255, 0.1);
-  padding-right: 56px;
+  padding-left: 0;
 }
-.mc4wp-form-fields .subscribe-inner-form input[type=email]::placeholder {
+.mc4wp-form-fields .subscribe-inner-form input::placeholder, .mc4wp-form-fields .subscribe-inner-form textarea::placeholder {
   color: #b1b0b0;
 }
 .mc4wp-form-fields .subscribe-inner-form .subscribe-btn-icon {
@@ -10107,7 +10115,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 /* Footer */
 .site-footer {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 35px;
     background-color: #1A1A1A;
     color: #A3A3A3;
 }
@@ -10131,6 +10139,16 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 .widget-footer a:hover {
     color: #fff;
+}
+.widget-footer .octf-btn{
+  padding: 1.5rem 0;
+  color: white;
+}
+.widget-footer .octf-btn:hover{
+  text-decoration: underline;
+}
+.widget-footer img{
+  width: 5rem;
 }
 .footer-logo {
     max-width: 155px;
@@ -10163,6 +10181,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .footer-social a i, .list-social a i {
     width: 14px;
     height: 14px;
+}
+.footer-social img {
+  height: 1rem;
+  width: auto;
 }
 .footer-list {
     margin: 0;

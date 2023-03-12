@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../public/logo-transparent.png'
+import Logo from '../public/logo.png';
+import MobileMenu from '../public/icons/mobile-menu.png';
+import CloseIcon from '../public/icons/close-icon.png';
 
 export default function Navbar() {
     return (
@@ -40,7 +42,7 @@ export default function Navbar() {
                             <div className="mlogo_wrapper clearfix">
                                 <div className="mobile_logo">
                                     <a href="index.html">
-                                        
+                                    <Image src={Logo} alt="MobileLogo" />
                                     </a>
                                 </div>
                             </div>
@@ -48,12 +50,12 @@ export default function Navbar() {
                         <div className="octf-col justify-content-end">
                             <div className="octf-menu-mobile octf-cta-header pr-0">
                                 <div id="mmenu-toggle" className="mmenu-toggle">
-                                    <button><i className="ot-flaticon-menu"></i></button>
+                                    <button><Image src={MobileMenu} alt="MobileMenu" /></button>
                                 </div>
                                 <div className="site-overlay mmenu-overlay"></div>
                                 <div id="mmenu-wrapper" className="mmenu-wrapper on-right">
                                     <div className="mmenu-inner">
-                                        <a className="mmenu-close" href="#"><i className="ot-flaticon-right-arrow"></i></a>
+                                        <a className="mmenu-close" href="#"><Image src={CloseIcon} alt="CloseIcon" /></a>
                                         <div className="mobile-nav">
                                             <ul id="menu-main-menu" className="mobile_mainmenu none-style">
                                                 <li><Link className="scroll-target" href="/">Inicio</Link></li>

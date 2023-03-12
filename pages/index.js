@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <Script src="/js/jquery.min.js"/>
       {/* <Script src="/js/vegas.min.js"/> */}
-      {/* <Script src="/js/scripts.js"/> */}
+      <Script src="/js/scripts.js"/>
     </Layout>
   )
 }

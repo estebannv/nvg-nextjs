@@ -7,6 +7,7 @@ export default function Layout(param) {
     <div>
         <Head>
             <title>NVG Arquitectura</title>
+            {/* <script src="https://kit.fontawesome.com/86b09c6383.js" crossOrigin="anonymous"></script> */}
         </Head>
         <Navbar/>
         {param.children}
